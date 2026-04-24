@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔊 Âm /eə/ — Sketchnote | Sound Squad</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Patrick Hand',cursive;background:#FFD93D;color:#1a1a1a;min-height:100vh;font-size:32px;line-height:1.5}
+h1,h2,h3{font-family:'Caveat',cursive}
+.nav{background:#1a1a1a;padding:0 20px;display:flex;gap:0;overflow-x:auto;position:sticky;top:0;z-index:100;border-bottom:4px dashed #FFD93D}
+.nav a{color:#FFD93D;text-decoration:none;padding:12px 18px;font-size:18px;font-weight:700;border-bottom:3px solid transparent;white-space:nowrap;font-family:'Patrick Hand',cursive}
+.nav a:hover,.nav a.active{border-color:#fff;color:#fff}
+.hero{background:#1a1a1a;color:#FFD93D;padding:40px 30px;text-align:center;border-bottom:6px dashed #FFD93D;position:relative}
+.hero h1{font-size:clamp(42px,8vw,72px);font-weight:700;line-height:1.1}
+.hero h1 .ipa{color:#fff;font-size:1.2em}
+.hero-sub{font-size:20px;color:#ccc;margin-top:8px}
+.container{max-width:960px;margin:0 auto;padding:30px 20px}
+.section{background:#FFF3B0;border:4px solid #1a1a1a;border-radius:18px;margin-bottom:36px;overflow:hidden;box-shadow:6px 6px 0 #1a1a1a}
+.section-head{background:#1a1a1a;color:#FFD93D;padding:18px 24px;font-size:28px;font-weight:700;display:flex;align-items:center;gap:14px;font-family:'Caveat',cursive}
+.section-body{padding:24px}
+.mouth-row{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:20px 0}
+.mouth-step{text-align:center;background:#fff;border:3px solid #1a1a1a;border-radius:14px;padding:14px;box-shadow:3px 3px 0 #1a1a1a}
+.mouth-step svg{width:100px;height:80px}
+.mouth-label{font-size:18px;font-weight:700;margin-top:6px}
+.mouth-sub{font-size:16px;color:#555}
+.arrow-big{font-size:40px;font-weight:900}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:3px solid #1a1a1a;border-radius:12px;padding:8px 16px;margin:6px;font-size:30px;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 #1a1a1a;transition:all .15s;font-family:'Patrick Hand',cursive}
+.chip:hover{background:#1a1a1a;color:#FFD93D;transform:translate(-2px,-2px);box-shadow:5px 5px 0 #555}
+.chip .ipa{font-size:18px;color:#888;font-family:monospace}
+.chip:hover .ipa{color:#ccc}
+.chips-wrap{display:flex;flex-wrap:wrap;gap:4px;margin:12px 0}
+.mp-table{width:100%;border-collapse:separate;border-spacing:0;border:3px solid #1a1a1a;border-radius:12px;overflow:hidden;font-size:28px;box-shadow:4px 4px 0 #1a1a1a}
+.mp-table th{background:#1a1a1a;color:#FFD93D;padding:12px 16px;text-align:left;font-size:22px}
+.mp-table td{padding:12px 16px;background:#fff;border-bottom:2px solid #eee;cursor:pointer}
+.mp-table tr:last-child td{border:none}
+.mp-table td:hover{background:#FFF3B0}
+.mp-green{color:#15803d;font-weight:700}
+.mp-red{color:#dc2626;font-weight:700}
+.sent{background:#fff;border:3px solid #1a1a1a;border-radius:12px;padding:16px 20px;margin-bottom:14px;cursor:pointer;box-shadow:3px 3px 0 #1a1a1a;transition:all .15s}
+.sent:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 #555}
+.sent .hi{color:#dc2626;text-decoration:underline wavy;text-underline-offset:4px}
+.sent .vi{font-size:20px;color:#666;margin-top:4px}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.check-box{background:#fff;border:3px solid #1a1a1a;border-radius:12px;padding:16px;box-shadow:3px 3px 0 #1a1a1a}
+.check-box h4{font-size:24px;margin-bottom:8px}
+.check-box ul{list-style:none;font-size:26px;line-height:1.8}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#1a1a1a;color:#FFD93D;border:3px solid #1a1a1a;border-radius:10px;padding:10px 22px;font-family:'Patrick Hand',cursive;font-size:24px;cursor:pointer;box-shadow:3px 3px 0 #555;transition:all .15s}
+.btn:hover{background:#333;transform:translate(-1px,-1px)}
+.footer{text-align:center;padding:30px 20px 16px;font-size:18px;color:#888}
+@media(max-width:600px){.check-grid{grid-template-columns:1fr}.mouth-row{flex-direction:column}body{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>Âm <span class="ipa">/eə/</span></h1>
+  <div style="font-size:28px;color:#fff;margin-top:6px;font-family:'Caveat',cursive">hair · care · square · bear · wear · there</div>
+  <div class="hero-sub">Sound Squad · EIE Centre · Cô Thủy · Sketchnote Edition</div>
+</div>
+<nav class="nav">
+  <a href="#sec1" class="active">👄 Khẩu hình</a>
+  <a href="#sec2">📖 Nhìn chữ đọc âm</a>
+  <a href="#sec3">⚔️ Minimal Pairs</a>
+  <a href="#sec4">📝 Câu dài</a>
+</nav>
+<div class="container">
+
+<!-- PHẦN 1 -->
+<div class="section" id="sec1">
+  <div class="section-head">👄 Phần 1 — Khẩu Hình Miệng /eə/</div>
+  <div class="section-body">
+    <div class="mouth-row">
+      <div class="mouth-step">
+        <svg viewBox="0 0 100 80" fill="none"><ellipse cx="50" cy="40" rx="42" ry="34" fill="#FFF3B0" stroke="#1a1a1a" stroke-width="2.5"/><ellipse cx="50" cy="50" rx="22" ry="8" fill="#fff" stroke="#dc2626" stroke-width="3"/><path d="M28 48 Q50 54 72 48" stroke="#dc2626" stroke-width="2" fill="none"/></svg>
+        <div class="mouth-label" style="color:#dc2626">BƯỚC 1: /e/</div>
+        <div class="mouth-sub">Miệng mở vừa<br>Như nói "e" tiếng Việt</div>
+      </div>
+      <div class="arrow-big">→</div>
+      <div class="mouth-step">
+        <svg viewBox="0 0 100 80" fill="none"><ellipse cx="50" cy="40" rx="42" ry="34" fill="#FFF3B0" stroke="#1a1a1a" stroke-width="2.5"/><ellipse cx="50" cy="52" rx="17" ry="10" fill="#fff" stroke="#e67e22" stroke-width="2.5"/><path d="M33 48 Q50 42 67 48" stroke="#e67e22" stroke-width="2" fill="none" stroke-dasharray="4,3"/></svg>
+        <div class="mouth-label" style="color:#e67e22">TRƯỢT</div>
+        <div class="mouth-sub">Thả lỏng miệng<br>Lưỡi hạ xuống giữa</div>
+      </div>
+      <div class="arrow-big">→</div>
+      <div class="mouth-step">
+        <svg viewBox="0 0 100 80" fill="none"><ellipse cx="50" cy="40" rx="42" ry="34" fill="#FFF3B0" stroke="#1a1a1a" stroke-width="2.5"/><ellipse cx="50" cy="52" rx="18" ry="12" fill="#fff" stroke="#15803d" stroke-width="3"/><ellipse cx="50" cy="58" rx="14" ry="4" fill="#15803d" opacity="0.3"/></svg>
+        <div class="mouth-label" style="color:#15803d">BƯỚC 3: /ə/</div>
+        <div class="mouth-sub">Miệng thả lỏng<br>Âm schwa nhẹ</div>
+      </div>
+    </div>
+    <div class="check-grid">
+      <div class="check-box"><h4>✅ PHẢI LÀM</h4><ul>
+        <li>🟢 Bắt đầu mở vừa /e/</li><li>🟢 Trượt mượt sang /ə/</li><li>🟢 Miệng thả lỏng ở cuối</li><li>🟢 Lưỡi từ giữa-trước → giữa</li>
+      </ul></div>
+      <div class="check-box"><h4>❌ ĐỪNG LÀM</h4><ul>
+        <li>🔴 Đọc "e-ơ" tiếng Việt</li><li>🔴 Tách thành 2 âm riêng</li><li>🔴 Nhầm sang /ɪə/ (near)</li><li>🔴 Đọc phẳng như /eɪ/ (day)</li>
+      </ul></div>
+    </div>
+    <div style="text-align:center;margin-top:16px">
+      <button class="btn" onclick="sp('hair',0.6)">🐢 hair</button>
+      <button class="btn" onclick="sp('care',0.6)">🐢 care</button>
+      <button class="btn" onclick="sp('there',0.6)">🐢 there</button>
+      <button class="btn" onclick="sp('hair care square bear wear there',0.8)">🔁 6 từ</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHẦN 2 -->
+<div class="section" id="sec2">
+  <div class="section-head">📖 Phần 2 — Nhìn Chữ Đọc Âm</div>
+  <div class="section-body">
+    <div style="font-size:26px;font-weight:700;margin-bottom:10px;text-decoration:underline wavy">✍️ Dạng 1: <span style="color:#dc2626">-AIR</span></div>
+    <div class="chips-wrap">
+      <span class="chip" onclick="sp('hair')">hair <span class="ipa">/heə/</span></span>
+      <span class="chip" onclick="sp('fair')">fair <span class="ipa">/feə/</span></span>
+      <span class="chip" onclick="sp('pair')">pair <span class="ipa">/peə/</span></span>
+      <span class="chip" onclick="sp('chair')">chair <span class="ipa">/tʃeə/</span></span>
+      <span class="chip" onclick="sp('stair')">stair <span class="ipa">/steə/</span></span>
+      <span class="chip" onclick="sp('repair')">repair <span class="ipa">/rɪˈpeə/</span></span>
+    </div>
+    <div style="font-size:26px;font-weight:700;margin:20px 0 10px;text-decoration:underline wavy">✍️ Dạng 2: <span style="color:#15803d">-ARE / -EAR / -ERE</span></div>
+    <div class="chips-wrap">
+      <span class="chip" onclick="sp('care')">care <span class="ipa">/keə/</span></span>
+      <span class="chip" onclick="sp('share')">share <span class="ipa">/ʃeə/</span></span>
+      <span class="chip" onclick="sp('square')">square <span class="ipa">/skweə/</span></span>
+      <span class="chip" onclick="sp('rare')">rare <span class="ipa">/reə/</span></span>
+      <span class="chip" onclick="sp('bear')">bear <span class="ipa">/beə/</span></span>
+      <span class="chip" onclick="sp('wear')">wear <span class="ipa">/weə/</span></span>
+      <span class="chip" onclick="sp('there')">there <span class="ipa">/ðeə/</span></span>
+      <span class="chip" onclick="sp('where')">where <span class="ipa">/weə/</span></span>
+      <span class="chip" onclick="sp('compare')">compare <span class="ipa">/kəmˈpeə/</span></span>
+      <span class="chip" onclick="sp('aware')">aware <span class="ipa">/əˈweə/</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- PHẦN 3 -->
+<div class="section" id="sec3">
+  <div class="section-head">⚔️ Phần 3 — Minimal Pairs</div>
+  <div class="section-body">
+    <div style="font-size:24px;font-weight:700;margin-bottom:12px;text-decoration:underline wavy">🆚 /eə/ vs /ɪə/ — "square" vs "near"</div>
+    <table class="mp-table">
+      <tr><th>/eə/ — bắt đầu /e/ ✅</th><th>/ɪə/ — bắt đầu /ɪ/ ❌</th></tr>
+      <tr><td class="mp-green" onclick="sp('hair')">hair /heə/ ▶</td><td class="mp-red" onclick="sp('here')">here /hɪə/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('dare')">dare /deə/ ▶</td><td class="mp-red" onclick="sp('dear')">dear /dɪə/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('bear')">bear /beə/ ▶</td><td class="mp-red" onclick="sp('beer')">beer /bɪə/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('fair')">fair /feə/ ▶</td><td class="mp-red" onclick="sp('fear')">fear /fɪə/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('there')">there /ðeə/ ▶</td><td class="mp-red" onclick="sp('tear')">tear /tɪə/ ▶</td></tr>
+    </table>
+    <div style="font-size:24px;font-weight:700;margin:24px 0 12px;text-decoration:underline wavy">🆚 /eə/ vs /eɪ/ — trượt sang /ə/ vs trượt sang /ɪ/</div>
+    <table class="mp-table">
+      <tr><th>/eə/ — sang schwa ✅</th><th>/eɪ/ — sang /ɪ/ ❌</th></tr>
+      <tr><td class="mp-green" onclick="sp('share')">share /ʃeə/ ▶</td><td class="mp-red" onclick="sp('shake')">shake /ʃeɪk/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('care')">care /keə/ ▶</td><td class="mp-red" onclick="sp('cake')">cake /keɪk/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('wear')">wear /weə/ ▶</td><td class="mp-red" onclick="sp('wait')">wait /weɪt/ ▶</td></tr>
+      <tr><td class="mp-green" onclick="sp('rare')">rare /reə/ ▶</td><td class="mp-red" onclick="sp('rain')">rain /reɪn/ ▶</td></tr>
+    </table>
+    <div style="text-align:center;margin-top:18px">
+      <button class="btn" onclick="sp('hair here dare dear bear beer fair fear',0.8)">▶ Nghe tất cả cặp</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHẦN 4 -->
+<div class="section" id="sec4">
+  <div class="section-head">📝 Phần 4 — Câu Dài Chứa 2–3 Âm /eə/</div>
+  <div class="section-body">
+    <div style="font-size:22px;color:#888;margin-bottom:14px">👆 Nhấn vào câu để nghe · Chữ đỏ = âm /eə/</div>
+    <div class="sent" onclick="sp('The fair hair needs careful care.')">The <span class="hi">fair</span> <span class="hi">hair</span> needs careful <span class="hi">care</span>.<div class="vi">Mái tóc vàng cần chăm sóc cẩn thận. (3 âm /eə/)</div></div>
+    <div class="sent" onclick="sp('Where is the pair of chairs?')"><span class="hi">Where</span> is the <span class="hi">pair</span> of <span class="hi">chairs</span>?<div class="vi">Cặp ghế ở đâu? (3 âm /eə/)</div></div>
+    <div class="sent" onclick="sp('I dare to share my rare bear.')">I <span class="hi">dare</span> to <span class="hi">share</span> my <span class="hi">rare</span> <span class="hi">bear</span>.<div class="vi">Tôi dám chia sẻ con gấu quý hiếm. (4 âm /eə/)</div></div>
+    <div class="sent" onclick="sp('Be aware and take care of the stairs there.')">Be a<span class="hi">ware</span> and take <span class="hi">care</span> of the <span class="hi">stairs</span> <span class="hi">there</span>.<div class="vi">Hãy cẩn thận với cầu thang ở đó. (4 âm /eə/)</div></div>
+    <div class="sent" onclick="sp('They compare and repair the square chair.')">They com<span class="hi">pare</span> and re<span class="hi">pair</span> the <span class="hi">square</span> <span class="hi">chair</span>.<div class="vi">Họ so sánh và sửa chiếc ghế vuông. (4 âm /eə/)</div></div>
+    <div class="sent" onclick="sp('Sarah wore her fair hair everywhere.')">Sarah <span class="hi">wore</span> her <span class="hi">fair</span> <span class="hi">hair</span> every<span class="hi">where</span>.<div class="vi">Sarah để tóc vàng đi khắp nơi. (3 âm /eə/)</div></div>
+  </div>
+</div>
+
+</div>
+<div class="footer">✏️ Sound Squad · EIE Centre · Cô Thủy · Âm /eə/ — Sketchnote Edition</div>
+<script>
+let voicesLoaded=false;function loadVoices(){if(!window.speechSynthesis)return;window.speechSynthesis.getVoices();voicesLoaded=true}
+if(window.speechSynthesis){loadVoices();window.speechSynthesis.onvoiceschanged=loadVoices}
+function sp(t,r){if(!window.speechSynthesis){alert('Mở bằng Chrome để nghe!');return}window.speechSynthesis.cancel();setTimeout(function(){const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=r||0.8;u.pitch=1;const v=window.speechSynthesis.getVoices();const f=v.find(x=>x.lang==='en-GB')||v.find(x=>x.lang.startsWith('en'));if(f)u.voice=f;window.speechSynthesis.speak(u)},100)}
+document.querySelectorAll('.nav a').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));this.classList.add('active')})});
+window.addEventListener('scroll',()=>{let c='';document.querySelectorAll('.section').forEach(s=>{if(window.scrollY>=s.offsetTop-120)c='#'+s.id});document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')===c))});
+</script>
+</body>
+</html>
