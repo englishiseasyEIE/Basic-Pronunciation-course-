@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài Tập Tổng Hợp — Stress · Schwa · Linking | Sound Squad</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Patrick Hand',cursive;background:#FFD93D;color:#1a1a1a;font-size:28px;line-height:1.6}
+h1,h2{font-family:'Caveat',cursive}
+.hero{background:#1a1a1a;color:#FFD93D;padding:28px 20px;text-align:center;border-bottom:6px dashed #FFD93D}
+.hero h1{font-size:clamp(28px,6vw,48px);line-height:1.1}
+.hero p{font-size:18px;color:#ccc;margin-top:6px}
+.container{max-width:960px;margin:0 auto;padding:20px 16px}
+.legend{background:#fff;border:3px solid #1a1a1a;border-radius:14px;padding:14px 18px;margin-bottom:24px;box-shadow:4px 4px 0 #1a1a1a;font-size:22px;line-height:2}
+.section{background:#FFF3B0;border:4px solid #1a1a1a;border-radius:18px;margin-bottom:28px;overflow:hidden;box-shadow:6px 6px 0 #1a1a1a}
+.sec-head{background:#1a1a1a;color:#FFD93D;padding:14px 20px;font-size:26px;font-weight:700;font-family:'Caveat',cursive}
+.sec-body{padding:18px}
+.item{background:#fff;border:3px solid #1a1a1a;border-radius:14px;padding:16px 18px;margin-bottom:14px;box-shadow:3px 3px 0 #1a1a1a}
+.item-num{display:inline-block;background:#1a1a1a;color:#FFD93D;width:32px;height:32px;border-radius:50%;text-align:center;line-height:32px;font-size:18px;font-weight:900;margin-right:8px}
+.word-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.word{background:#ffe066;border:2px solid #1a1a1a;border-radius:10px;padding:6px 14px;font-size:24px;font-weight:700;cursor:pointer;transition:all .15s;box-shadow:2px 2px 0 #1a1a1a}
+.word:hover{background:#1a1a1a;color:#FFD93D;transform:translate(-1px,-1px)}
+.chunk{background:#e0f2fe;border:2px solid #0369a1;border-radius:10px;padding:8px 16px;font-size:24px;font-weight:700;cursor:pointer;margin:8px 0;display:inline-block;box-shadow:2px 2px 0 #0369a1;transition:all .15s}
+.chunk:hover{background:#0369a1;color:#fff;transform:translate(-1px,-1px)}
+.sentence{background:#f0fdf4;border:3px solid #15803d;border-radius:12px;padding:12px 16px;margin:8px 0;cursor:pointer;box-shadow:3px 3px 0 #15803d;transition:all .15s;font-size:26px}
+.sentence:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 #15803d}
+.stress{color:#dc2626;font-weight:900;text-decoration:underline;text-underline-offset:4px}
+.schwa{color:#15803d;font-weight:900;text-decoration:underline dotted;text-underline-offset:4px}
+.link{color:#0369a1;font-weight:900;text-decoration:underline wavy #0369a1;text-underline-offset:4px}
+.ipa{font-size:18px;color:#666;font-family:monospace;display:block;margin-top:4px}
+.tip{font-size:20px;color:#555;margin-top:6px;padding-left:40px}
+.footer{text-align:center;padding:20px;font-size:16px;color:#888}
+@media(max-width:600px){body{font-size:24px}.word,.chunk{font-size:20px}.sentence{font-size:22px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🔥 BÀI TẬP TỔNG HỢP</h1>
+  <p>Sound Squad · EIE Centre · Cô Thủy · Adelaide, Nam Úc, Australia</p>
+</div>
+
+<div class="container">
+
+<div class="legend">
+  🔴 <span class="stress">CHỮ ĐỎ</span> = Trọng âm (nhấn TO + DÀI) &nbsp;
+  🟢 <span class="schwa">chữ xanh lá</span> = Schwa /ə/ (đọc lướt nhẹ) &nbsp;
+  🔵 <span class="link">chữ xanh dương</span> = Nối âm (đọc liền)
+</div>
+
+<!-- ═══ PART 1 ═══ -->
+<div class="section">
+  <div class="sec-head">⚡ PHẦN 1 — Nhịp Sống Hàng Ngày (5 câu)</div>
+  <div class="sec-body">
+
+    <!-- 1 -->
+    <div class="item">
+      <div><span class="item-num">1</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('important')">im-<span class="stress">POR</span>-t<span class="schwa">a</span>nt</span>
+        <span class="word" onclick="sp('meeting')"><span class="stress">MEE</span>-ting</span>
+        <span class="word" onclick="sp('about')"><span class="schwa">a</span>-<span class="stress">BOUT</span></span>
+      </div>
+      <div class="chunk" onclick="sp('an important meeting',0.5)">
+        <span class="link">an‿im</span>-<span class="stress">POR</span>-t<span class="schwa">a</span>nt <span class="stress">MEE</span>-ting
+      </div>
+      <div class="sentence" onclick="sp('I have an important meeting about the project today.',0.5)">
+        I have <span class="link">an‿im</span>-<span class="stress">POR</span>-t<span class="schwa">a</span>nt <span class="stress">MEE</span>-ting <span class="schwa">a</span>-<span class="stress">BOUT</span> <span class="schwa">the</span> <span class="stress">PRO</span>-ject t<span class="schwa">o</span>-<span class="stress">DAY</span>.
+      </div>
+      <div class="ipa">/aɪ hæv ən‿ɪmˈpɔː.tənt ˈmiː.tɪŋ əˈbaʊt ðə ˈprɒdʒ.ekt təˈdeɪ/</div>
+      <div class="tip">💡 <b>an‿im</b> = nối âm /n/ sang /ɪ/ · <b>about</b> bắt đầu bằng schwa</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+      <div><span class="item-num">2</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('comfortable')"><span class="stress">COM</span>-f<span class="schwa">o</span>r-t<span class="schwa">a</span>-ble</span>
+        <span class="word" onclick="sp('apartment')"><span class="schwa">a</span>-<span class="stress">PART</span>-m<span class="schwa">e</span>nt</span>
+      </div>
+      <div class="chunk" onclick="sp('a comfortable apartment',0.5)">
+        <span class="schwa">a</span> <span class="stress">COM</span>-ft<span class="schwa">a</span>-ble <span class="link">a‿</span><span class="stress">PART</span>-m<span class="schwa">e</span>nt
+      </div>
+      <div class="sentence" onclick="sp('She found a comfortable apartment near the station.',0.5)">
+        She <span class="stress">FOUND</span> <span class="schwa">a</span> <span class="stress">COM</span>-ft<span class="schwa">a</span>-ble <span class="link">a‿</span><span class="stress">PART</span>-m<span class="schwa">e</span>nt <span class="stress">NEAR</span> <span class="schwa">the</span> <span class="stress">STA</span>-tion.
+      </div>
+      <div class="ipa">/ʃiː faʊnd ə ˈkʌmf.tə.bəl əˈpɑːt.mənt nɪə ðə ˈsteɪ.ʃən/</div>
+      <div class="tip">💡 <b>comfortable</b> = 3 âm tiết (COMF-ta-ble), KHÔNG phải 4! · Schwa lướt nhanh</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+      <div><span class="item-num">3</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('banana')">b<span class="schwa">a</span>-<span class="stress">NA</span>-n<span class="schwa">a</span></span>
+        <span class="word" onclick="sp('chocolate')"><span class="stress">CHOC</span>-l<span class="schwa">a</span>te</span>
+      </div>
+      <div class="chunk" onclick="sp('a banana and chocolate',0.5)">
+        <span class="schwa">a</span> b<span class="schwa">a</span>-<span class="stress">NA</span>-n<span class="link">a‿and</span> <span class="stress">CHOC</span>-l<span class="schwa">a</span>te
+      </div>
+      <div class="sentence" onclick="sp('Can I have a banana and chocolate for breakfast?',0.5)">
+        <span class="link">Can‿I</span> <span class="stress">HAVE</span> <span class="schwa">a</span> b<span class="schwa">a</span>-<span class="stress">NA</span>-n<span class="link">a‿and</span> <span class="stress">CHOC</span>-l<span class="schwa">a</span>te <span class="schwa">for</span> <span class="stress">BREAK</span>-fast?
+      </div>
+      <div class="ipa">/kən‿aɪ hæv ə bəˈnɑː.nə‿ənd ˈtʃɒk.lət fə ˈbrek.fəst/</div>
+      <div class="tip">💡 <b>Can‿I</b> nối liền · <b>banana‿and</b> /ə/ nối /ə/ · <b>for</b> = /fə/</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="item">
+      <div><span class="item-num">4</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('photograph')"><span class="stress">PHO</span>-t<span class="schwa">o</span>-graph</span>
+        <span class="word" onclick="sp('photographer')">ph<span class="schwa">o</span>-<span class="stress">TOG</span>-r<span class="schwa">a</span>-ph<span class="schwa">er</span></span>
+      </div>
+      <div class="chunk" onclick="sp('a good photographer',0.5)">
+        <span class="link">a‿</span><span class="stress">GOOD</span> ph<span class="schwa">o</span>-<span class="stress">TOG</span>-r<span class="schwa">a</span>-ph<span class="schwa">er</span>
+      </div>
+      <div class="sentence" onclick="sp('He took a photograph because he is a good photographer.',0.5)">
+        He <span class="stress">TOOK</span> <span class="link">a‿</span><span class="stress">PHO</span>-t<span class="schwa">o</span>-graph be-<span class="stress">CAUSE</span> <span class="link">he‿is</span> <span class="link">a‿</span><span class="stress">GOOD</span> ph<span class="schwa">o</span>-<span class="stress">TOG</span>-r<span class="schwa">a</span>-ph<span class="schwa">er</span>.
+      </div>
+      <div class="ipa">/hiː tʊk ə‿ˈfəʊ.tə.ɡrɑːf bɪˈkɒz hiː‿ɪz ə‿ɡʊd fəˈtɒɡ.rə.fə/</div>
+      <div class="tip">💡 <b>PHOtograph</b> vs <b>phoTOGrapher</b> — cùng gốc, stress KHÁC vị trí!</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="item">
+      <div><span class="item-num">5</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('vegetable')"><span class="stress">VEG</span>-t<span class="schwa">a</span>-ble</span>
+        <span class="word" onclick="sp('together')">t<span class="schwa">o</span>-<span class="stress">GETH</span>-<span class="schwa">er</span></span>
+      </div>
+      <div class="chunk" onclick="sp('cook it together',0.5)">
+        <span class="link">cook‿it</span> t<span class="schwa">o</span>-<span class="stress">GETH</span>-<span class="schwa">er</span>
+      </div>
+      <div class="sentence" onclick="sp('Let us cook the vegetables together after lunch.',0.5)">
+        <span class="link">Let‿us</span> <span class="stress">COOK</span> <span class="schwa">the</span> <span class="stress">VEG</span>-t<span class="schwa">a</span>-bles t<span class="schwa">o</span>-<span class="stress">GETH</span>-<span class="schwa">er</span> <span class="link">af‿ter</span> <span class="stress">LUNCH</span>.
+      </div>
+      <div class="ipa">/let‿əs kʊk ðə ˈvedʒ.tə.bəlz təˈɡeð.ər ˈɑːf.tə lʌntʃ/</div>
+      <div class="tip">💡 <b>Let‿us</b> = /let‿əs/ · <b>cook‿it</b> = nối /k/ sang /ɪ/</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ PART 2 ═══ -->
+<div class="section">
+  <div class="sec-head">🚀 PHẦN 2 — Công Việc & Học Tập (5 câu)</div>
+  <div class="sec-body">
+
+    <!-- 6 -->
+    <div class="item">
+      <div><span class="item-num">6</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('presentation')">pre-s<span class="schwa">e</span>n-<span class="stress">TA</span>-tion</span>
+        <span class="word" onclick="sp('tomorrow')">t<span class="schwa">o</span>-<span class="stress">MOR</span>-row</span>
+      </div>
+      <div class="chunk" onclick="sp('prepare a presentation',0.5)">
+        pre-<span class="stress">PARE</span> <span class="link">a‿</span>pre-s<span class="schwa">e</span>n-<span class="stress">TA</span>-tion
+      </div>
+      <div class="sentence" onclick="sp('We need to prepare a presentation for tomorrow.',0.5)">
+        We <span class="stress">NEED</span> <span class="schwa">to</span> pre-<span class="stress">PARE</span> <span class="link">a‿</span>pre-s<span class="schwa">e</span>n-<span class="stress">TA</span>-tion <span class="schwa">for</span> t<span class="schwa">o</span>-<span class="stress">MOR</span>-row.
+      </div>
+      <div class="ipa">/wiː niːd tə prɪˈpeər ə‿ˌprez.ənˈteɪ.ʃən fə təˈmɒr.əʊ/</div>
+      <div class="tip">💡 <b>to</b> & <b>for</b> = schwa · <b>a‿pre</b> nối liền</div>
+    </div>
+
+    <!-- 7 -->
+    <div class="item">
+      <div><span class="item-num">7</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('develop')">d<span class="schwa">e</span>-<span class="stress">VE</span>-l<span class="schwa">o</span>p</span>
+        <span class="word" onclick="sp('application')">ap-pli-<span class="stress">CA</span>-tion</span>
+      </div>
+      <div class="chunk" onclick="sp('develop an application',0.5)">
+        d<span class="schwa">e</span>-<span class="stress">VE</span>-l<span class="schwa">o</span>p <span class="link">an‿</span>ap-pli-<span class="stress">CA</span>-tion
+      </div>
+      <div class="sentence" onclick="sp('They want to develop an application for the company.',0.5)">
+        They <span class="stress">WANT</span> <span class="schwa">to</span> d<span class="schwa">e</span>-<span class="stress">VE</span>-l<span class="schwa">o</span>p <span class="link">an‿</span>ap-pli-<span class="stress">CA</span>-tion <span class="schwa">for</span> <span class="schwa">the</span> <span class="stress">COM</span>-p<span class="schwa">a</span>-ny.
+      </div>
+      <div class="ipa">/ðeɪ wɒnt tə dɪˈvel.əp ən‿ˌæp.lɪˈkeɪ.ʃən fə ðə ˈkʌm.pə.ni/</div>
+      <div class="tip">💡 <b>an‿ap</b> = /n/ nối /æ/ · <b>company</b> = 3 âm, schwa ở giữa</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="item">
+      <div><span class="item-num">8</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('certificate')">c<span class="schwa">er</span>-<span class="stress">TI</span>-fi-c<span class="schwa">a</span>te</span>
+        <span class="word" onclick="sp('international')">in-t<span class="schwa">er</span>-<span class="stress">NA</span>-tion-<span class="schwa">al</span></span>
+      </div>
+      <div class="chunk" onclick="sp('an international certificate',0.5)">
+        <span class="link">an‿</span>in-t<span class="schwa">er</span>-<span class="stress">NA</span>-tion-<span class="schwa">al</span> c<span class="schwa">er</span>-<span class="stress">TI</span>-fi-c<span class="schwa">a</span>te
+      </div>
+      <div class="sentence" onclick="sp('She got an international certificate after the exam.',0.5)">
+        She <span class="stress">GOT</span> <span class="link">an‿</span>in-t<span class="schwa">er</span>-<span class="stress">NA</span>-tion-<span class="schwa">al</span> c<span class="schwa">er</span>-<span class="stress">TI</span>-fi-c<span class="schwa">a</span>te <span class="link">af‿ter</span> <span class="schwa">the</span> <span class="link">e‿</span><span class="stress">XAM</span>.
+      </div>
+      <div class="ipa">/ʃiː ɡɒt ən‿ˌɪn.təˈnæʃ.ən.əl səˈtɪf.ɪ.kət ˈɑːf.tə ðə ɪɡˈzæm/</div>
+      <div class="tip">💡 <b>certificate</b> = schwa ở âm 1 & 4 · <b>an‿in</b> = nối /n/ sang /ɪ/</div>
+    </div>
+
+    <!-- 9 -->
+    <div class="item">
+      <div><span class="item-num">9</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('communicate')">c<span class="schwa">o</span>m-<span class="stress">MU</span>-ni-cate</span>
+        <span class="word" onclick="sp('professor')">pr<span class="schwa">o</span>-<span class="stress">FES</span>-s<span class="schwa">or</span></span>
+      </div>
+      <div class="chunk" onclick="sp('communicate with the professor',0.5)">
+        c<span class="schwa">o</span>m-<span class="stress">MU</span>-ni-cate <span class="link">with‿the</span> pr<span class="schwa">o</span>-<span class="stress">FES</span>-s<span class="schwa">or</span>
+      </div>
+      <div class="sentence" onclick="sp('It is easy to communicate with the professor in English.',0.5)">
+        <span class="link">It‿is</span> <span class="stress">EA</span>-sy <span class="schwa">to</span> c<span class="schwa">o</span>m-<span class="stress">MU</span>-ni-cate <span class="link">with‿the</span> pr<span class="schwa">o</span>-<span class="stress">FES</span>-s<span class="schwa">or</span> <span class="link">in‿</span><span class="stress">ENG</span>-lish.
+      </div>
+      <div class="ipa">/ɪt‿ɪz ˈiː.zi tə kəˈmjuː.nɪ.keɪt wɪð‿ðə prəˈfes.ə ɪn‿ˈɪŋ.ɡlɪʃ/</div>
+      <div class="tip">💡 <b>It‿is</b> = /ɪt‿ɪz/ · <b>with‿the</b> = /wɪð‿ðə/ đọc liền 1 nhịp</div>
+    </div>
+
+    <!-- 10 -->
+    <div class="item">
+      <div><span class="item-num">10</span> <b>Từ luyện:</b></div>
+      <div class="word-row">
+        <span class="word" onclick="sp('photography')">ph<span class="schwa">o</span>-<span class="stress">TOG</span>-r<span class="schwa">a</span>-phy</span>
+        <span class="word" onclick="sp('imagination')">i-<span class="stress">MAG</span>-i-<span class="stress">NA</span>-tion</span>
+      </div>
+      <div class="chunk" onclick="sp('creativity and imagination',0.5)">
+        cre-a-<span class="stress">TI</span>-vi-ty <span class="link">and‿</span>i-<span class="stress">MAG</span>-i-<span class="stress">NA</span>-tion
+      </div>
+      <div class="sentence" onclick="sp('Photography is about creativity and imagination.',0.5)">
+        Ph<span class="schwa">o</span>-<span class="stress">TOG</span>-r<span class="schwa">a</span>-phy <span class="link">is‿a</span>-<span class="stress">BOUT</span> cre-a-<span class="stress">TI</span>-vi-ty <span class="link">and‿</span>i-<span class="stress">MAG</span>-i-<span class="stress">NA</span>-tion.
+      </div>
+      <div class="ipa">/fəˈtɒɡ.rə.fi ɪz‿əˈbaʊt kriː.eɪˈtɪv.ə.ti ənd‿ɪˌmædʒ.ɪˈneɪ.ʃən/</div>
+      <div class="tip">💡 Câu boss cuối! <b>is‿about</b> nối liền · nhiều schwa + 2 trọng âm phụ</div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+<div class="footer">✏️ Sound Squad · EIE Centre · Cô Thủy · Adelaide, Nam Úc, Australia</div>
+
+<script>
+function sp(t,r){
+  if(!window.speechSynthesis)return;
+  window.speechSynthesis.cancel();
+  setTimeout(()=>{
+    const u=new SpeechSynthesisUtterance(t);
+    u.lang='en-GB';u.rate=r||0.7;u.pitch=1;
+    const vs=window.speechSynthesis.getVoices();
+    const v=vs.find(v=>v.lang==='en-GB')||vs.find(v=>v.lang.startsWith('en'));
+    if(v)u.voice=v;
+    window.speechSynthesis.speak(u);
+  },100);
+}
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=()=>window.speechSynthesis.getVoices();}
+</script>
+</body>
+</html>
